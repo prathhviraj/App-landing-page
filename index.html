@@ -6,31 +6,42 @@
   <title>App Landing Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
     }
+
     .jumbotron-style {
       background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     }
+
     .card:hover {
       transform: scale(1.03);
       transition: 0.3s ease-in-out;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
+
     .store-buttons img {
       max-width: 160px;
       height: auto;
       margin: 10px;
       transition: transform 0.3s;
     }
+
     .store-buttons img:hover {
       transform: scale(1.05);
     }
+
     footer {
       background: #111;
     }
+
     footer h5 {
       font-weight: 600;
     }
@@ -50,9 +61,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <!-- Left-aligned nav links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
 
           <!-- Right-aligned login form -->
@@ -67,17 +78,17 @@
   </header>
 
   <!-- Hero Section / Jumbotron -->
-  <section class="jumbotron-style text-white text-center py-5">
+  <section id="home" class="jumbotron-style text-white text-center py-5">
     <div class="container">
       <h1 class="display-3 fw-bold">Introducing MyApp</h1>
       <p class="lead">Streamline your work with our powerful and beautifully designed app.</p>
-      <a href="#" class="btn btn-light btn-lg shadow-sm px-4 py-2 mt-3">Try It Now</a>
+      <a href="#features" class="btn btn-light btn-lg shadow-sm px-4 py-2 mt-3">Try It Now</a>
     </div>
   </section>
 
   <!-- Features Section -->
   <main>
-    <section class="py-5 bg-light">
+    <section id="features" class="py-5 bg-light">
       <div class="container">
         <div class="row text-center g-4">
           <div class="col-md-4">
@@ -91,7 +102,7 @@
           </div>
           <div class="col-md-4">
             <article class="card border-0 shadow-sm h-100">
-              <img src="https://png.pngtree.com/png-clipart/20230930/original/pngtree-fast-page-speed-improves-website-performance-for-seo-vector-png-image_12914774.png">
+              <img src="https://png.pngtree.com/png-clipart/20230930/original/pngtree-fast-page-speed-improves-website-performance-for-seo-vector-png-image_12914774.png" alt="Fast Performance">
               <div class="card-body">
                 <h5 class="card-title fw-bold">⚡ Fast Performance</h5>
                 <p class="card-text">Optimized for speed and efficiency to get things done faster.</p>
@@ -124,7 +135,7 @@
   </section>
 
   <!-- Footer Section -->
-  <footer class="text-white pt-5 pb-3">
+  <footer id="contact" class="text-white pt-5 pb-3">
     <div class="container">
       <div class="row">
         <section class="col-md-4 mb-4">
